@@ -1,4 +1,5 @@
 const Hapi = require('@hapi/hapi');
+const plugins = require('./plugins');
 
 /**
  * Start Hapi server with port from .env file
@@ -26,6 +27,7 @@ module.exports = {
 			server.route(route);
 		});
 
-		server.start();
+		await server.register(plugins);
+		await server.start();
 	},
 };
