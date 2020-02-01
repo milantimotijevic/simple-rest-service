@@ -11,7 +11,22 @@ const getOneReservationHandler = async function getOneReservationHandler(request
 	return getOneReservation(id);
 };
 
+const createReservationHandler = async function createReservationHandler(request) {
+ //TODO
+};
+
+const updateReservationHandler = async function updateReservationHandler(request) {
+	//TODO
+};
+
+const deleteReservationHandler = async function deleteReservationHandler(request) {
+	//TODO
+};
+
 module.exports = {
 	getAllReservationsHandler,
 	getOneReservationHandler,
+	createReservationHandler,
+	updateReservationHandler,
+	deleteReservationHandler
 };

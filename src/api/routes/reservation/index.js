@@ -23,6 +23,42 @@ const routes = [
 			},
 		},
 	},
+	{
+		method: 'POST',
+		path: '/reservation',
+		handler: controller.getOneReservationHandler,
+		options: {
+			description: 'Create a new reservation',
+			tags: ['api'],
+			validate: {
+				payload: validation.createReservationSchema,
+			},
+		},
+	},
+	{
+		method: 'PUT',
+		path: '/reservation',
+		handler: controller.getOneReservationHandler,
+		options: {
+			description: 'Update existing reservation',
+			tags: ['api'],
+			validate: {
+				payload: validation.updateReservationSchema,
+			},
+		},
+	},
+	{
+		method: 'DELETE',
+		path: '/reservation/{id}',
+		handler: controller.getOneReservationHandler,
+		options: {
+			description: 'Delete existing reservation',
+			tags: ['api'],
+			validate: {
+				params: validation.reservationIdParam,
+			},
+		},
+	},
 ];
 
 module.exports = routes;
