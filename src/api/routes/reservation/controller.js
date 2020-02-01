@@ -1,5 +1,5 @@
-const getAllReservations = require('../../../domain/use_cases/queries/getAllReservations');
-const getOneReservation = require('../../../domain/use_cases/queries/getOneReservation');
+const getAllReservations = require('../../../domain/use_cases/queries/reservation/getAllReservations');
+const getOneReservation = require('../../../domain/use_cases/queries/reservation/getOneReservation');
 
 
 const getAllReservationsHandler = async function getAllReservationsHandler() {
