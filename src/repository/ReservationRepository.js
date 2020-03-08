@@ -1,3 +1,4 @@
+const uuid = require('uuid');
 const reservations = [];
 
 const getOneReservation = function(id) {
@@ -10,7 +11,7 @@ const getAllReservations = function() {
 
 const createReservation = function(reservationParam) {
 	const reservation = {
-		id: 'todo',
+		id: uuid.v4(),
 		...reservationParam,
 	};
 

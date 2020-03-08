@@ -1,5 +1,6 @@
 const getAllReservations = require('../../../domain/use_cases/queries/reservation/getAllReservations');
 const getOneReservation = require('../../../domain/use_cases/queries/reservation/getOneReservation');
+const createReservation = require('../../../domain/use_cases/commands/reservation/createReservation');
 
 
 const getAllReservationsHandler = async function getAllReservationsHandler() {
@@ -12,7 +13,7 @@ const getOneReservationHandler = async function getOneReservationHandler(request
 };
 
 const createReservationHandler = async function createReservationHandler(request) {
- //TODO
+	return createReservation(request.payload);
 };
 
 const updateReservationHandler = async function updateReservationHandler(request) {
