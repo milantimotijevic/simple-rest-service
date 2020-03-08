@@ -26,7 +26,7 @@ const routes = [
 	{
 		method: 'POST',
 		path: '/reservation',
-		handler: controller.getOneReservationHandler,
+		handler: controller.createReservationHandler,
 		options: {
 			description: 'Create a new reservation',
 			tags: ['api'],
@@ -38,7 +38,7 @@ const routes = [
 	{
 		method: 'PUT',
 		path: '/reservation',
-		handler: controller.getOneReservationHandler,
+		handler: controller.updateReservationHandler,
 		options: {
 			description: 'Update existing reservation',
 			tags: ['api'],
@@ -50,7 +50,7 @@ const routes = [
 	{
 		method: 'DELETE',
 		path: '/reservation/{id}',
-		handler: controller.getOneReservationHandler,
+		handler: controller.deleteReservationHandler,
 		options: {
 			description: 'Delete existing reservation',
 			tags: ['api'],
