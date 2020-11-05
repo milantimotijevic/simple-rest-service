@@ -10,6 +10,15 @@ const routes = [
 			tags: ['api'],
 		},
 	},
+	{
+		method: 'GET',
+		path: '/konov-izvestaj-o-dzigijevoj-faci',
+		handler: controller.report,
+		options: {
+			description: 'Get report',
+			tags: ['api'],
+		},
+	},
 ];
 
 module.exports = routes;
